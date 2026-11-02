@@ -1,0 +1,15 @@
+WONDERLUST - LOCAL SETUP
+
+1. Install Node.js and MongoDB Community Server. Start MongoDB locally on 127.0.0.1:27017.
+2. In backend folder: npm install
+3. In backend folder: npm run seed
+4. In backend folder: npm start
+5. In frontend folder (separate terminal): npm install
+6. In frontend folder: npm run dev
+7. Open http://localhost:5173
+
+Demo host: anuj@gmail.com / anuj123
+Demo admin: admin@gmail.com / admin123
+
+backend/.env and frontend/.env are INCLUDED for local testing. Do NOT commit them to GitHub. Replace JWT_SECRET and demo passwords before deploying. The seed script is restricted to local MongoDB. For deployment use MongoDB Atlas and set server environment variables on Render; seed local data does not automatically transfer.
+No SMS/WhatsApp/email notifications are configured. Email is used as login ID only.

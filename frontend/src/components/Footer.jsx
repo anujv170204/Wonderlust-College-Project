@@ -1,0 +1,3 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+export const Footer = () => <footer className="bg-slate-900 text-slate-300 py-8"><div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between gap-5"><div><p className="font-bold text-white text-lg">WonderLust</p><p className="text-xs mt-2">© {new Date().getFullYear()} · Built by Anuj Vishwakarma</p></div><nav className="flex flex-wrap gap-5 text-sm"><Link to="/explore">Explore stays</Link><Link to="/host/add-property">List a property</Link><Link to="/host/bookings">Host bookings</Link><Link to="/about">About</Link></nav></div></footer>;

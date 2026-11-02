@@ -1,0 +1,36 @@
+{
+  "name": "staysphere-backend",
+  "version": "1.0.0",
+  "description": "Backend API for StaySphere Hotel & Property Booking Platform",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/seed/seed.js",
+    "test": "node --test tests/*.test.js",
+    "create-admin": "node src/seed/createAdmin.js",
+    "migrate-emails": "node src/seed/migrateEmails.js"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "staysphere",
+    "booking",
+    "hotel"
+  ],
+  "author": "StaySphere Team",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
